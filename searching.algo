@@ -1,0 +1,22 @@
+ALGORITHM insertion-sort
+
+
+VAR
+    T: ARRAY_OF_INTEGER;
+    k,i,j:INTEGER;
+
+
+BEGIN
+    FOR i FROM 1 TO T.legth-1 STEP 1  DO
+    k:=T[i];
+    j:=i-1;
+    WHILE (j>=0 AND k<=T[j]) DO
+    t[j+1]=t[j];
+    j:=j-1;
+     
+     
+    END_WHILE
+    T[j+1] =k;
+   
+    END_FOR
+END
